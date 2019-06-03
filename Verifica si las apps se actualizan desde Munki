@@ -1,0 +1,11 @@
+##########################################################################################
+#
+#	VERIFICA SI SE ACTUALIZARÁ LAS APPS AL CERRAR LA SESIÓN
+
+# Verifica si las apps se actualizarán en el proximo cierre de sesión
+
+# No es necesario enviar comandos como root
+
+ls -la /Users/Shared/.com.googlecode.munki*
+
+##########################################################################################
