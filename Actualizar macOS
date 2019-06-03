@@ -2,7 +2,7 @@
 #
 #	ACTUALIZAR macOS
 
-# Enviar comandos como root
+# Enviar comandos como root 
 
 softwareupdate -i -r ; reboot
 
