@@ -34,6 +34,6 @@ rm -dfr /Users/*/Library/Group\ Containers/*Offic*
 rm -dfr /Users/*/Library/Application\ Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.microsoft*
 
 
-echo CACHÉS PURGADAS
+echo CACHÉS PURGADAS!
 
 ##########################################################################################
