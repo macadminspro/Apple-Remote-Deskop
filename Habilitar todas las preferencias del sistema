@@ -1,0 +1,15 @@
+##########################################################################################
+#
+#	HABILITAR TODAS LAS PREFERENCIAS DEL SISTEMA
+
+# Enviar comandos como root
+
+profiles -R -p com.github.percysalgado.perfil.preferenciasdelsistema  ##  << elimina perfil instalado https://github.com/percysalgado/perfiles/blob/master/Deshabilita%20algunas%20categorias%20de%20Preferencias%20del%20Sistema.mobileconfig
+CLOSE=$(ps -ax | grep /Applications | awk '{print $1}' |  awk ' BEGIN { ORS="\t" } { print } ')
+kill -9 $CLOSE
+read -t 1
+open  /Applications/System\ Preferences.app 
+
+
+
+##########################################################################################
