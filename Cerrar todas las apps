@@ -1,0 +1,10 @@
+##########################################################################################
+#
+#	CIERRA TODAS LAS APPS SIN CERRAR SESIÓN
+
+# Enviar comandos como usuario actual
+
+CLOSE=$(ps -ax | grep /Applications | awk '{print $1}' |  awk ' BEGIN { ORS="\t" } { print } ')
+kill -9 $CLOSE
+
+##########################################################################################
