@@ -1,0 +1,14 @@
+##########################################################################################
+#
+#	CIERRA TODAS LA APPS Y REINICIA SESIÓN DE USUARIO ACTUAL
+
+# Enviar comandos como root
+
+CLOSE=$(ps -ax | grep /Applications | awk '{print $1}' |  awk ' BEGIN { ORS="\t" } { print } ')
+kill -9 $CLOSE
+
+rm -f /Users/alumnos/Library/Preferences/ByHost/com.apple.loginwindow*
+pkill loginwindow
+
+
+##########################################################################################
