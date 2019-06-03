@@ -1,0 +1,39 @@
+##########################################################################################
+#
+#	ELIMINACIÒN DE CACHES DE APPS
+
+#	Se cerraràn todas las apps
+
+#	Elimina las cachès de las apps
+
+# Enviar comandos como root
+
+
+kill -9 $(ps -ax | grep /Applications | awk '{print $1}' |  awk ' BEGIN { ORS="\t" } { print } ')
+
+rm -f /Users/*/Library/Preferences/ByHost/com.apple.loginwindow*
+
+rm -dfr /Users/*/Library/Saved\ Application\ State/*
+rm -dfr /Users/*/Library/Keychains/*
+rm -dfr /Users/*/Library/Preferences/Safari/*
+rm -dfr /Users/*/Library/Application\ Support/Google/*
+rm -dfr /Users/*/Library/Application\ Support/Firefox/*
+rm -dfr /Users/*/Library/Caches/*
+rm -dfr /Users/*/Library/Application\ Support/Adob*
+
+rm -dfr /Users/*/Library/Preferences/Adob*
+rm -dfr /Users/*/Library/Preferences/adob*
+rm -dfr /Users/*/Library/Preferences/com.Adob*
+rm -dfr /Users/*/Library/Preferences/com.adob*
+rm -dfr /Users/*/Library/Preferences/com.microsoft*
+rm -dfr /Users/*/Library/Preferences/com.google*
+rm -dfr /Users/*/Library/Preferences/com.oracle*
+
+rm -dfr /Users/*/Library/Containers/com.microsoft.*
+rm -dfr /Users/*/Library/Group\ Containers/*Offic*
+rm -dfr /Users/*/Library/Application\ Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.microsoft*
+
+
+echo CACHÉS PURGADAS
+
+##########################################################################################
